@@ -17,7 +17,7 @@ pip install -r requirements.txt
 pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 -f https://download.pytorch.org/whl/torch_stable.html
 ```
 
-Data Preparation
+## Data Preparation
 Download and put your polyp dataset in polyp_seg/data with this structure:
 
 polyp_seg/data/
@@ -31,11 +31,12 @@ polyp_seg/data/
     ├── images/
     └── masks/
 
-Backbone Preparation
+## Backbone Preparation
 Download pre-trained weights for shunted_s and place it in:
 
 polyp_seg/pretrained_weight/
 
+## Training, Testing and Evaluation
 Training
 bash
 cd polyp_seg
