@@ -23,7 +23,7 @@ Download and put your polyp dataset in
 polyp_seg/data
 ```
 with this structure:
-
+```
 polyp_seg/data/
 ├── train/
 │   ├── images/
@@ -34,7 +34,7 @@ polyp_seg/data/
 └── eval/
     ├── images/
     └── masks/
-
+```
 ## Backbone Preparation
 Download pre-trained weights for shunted_s and place it in:
 
