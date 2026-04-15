@@ -37,7 +37,7 @@ polyp_seg/data/
 ├── TrainDataset/
 │   ├── images/
 │   └── masks/
-├── TestDatase/
+├── TestDataset/
     ...
 
 ```
