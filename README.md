@@ -31,8 +31,21 @@ pip install -r requirements.txt
 # Install PyTorch with CUDA 11.0
 pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 -f https://download.pytorch.org/whl/torch_stable.html
 
-# Data preparation
+## Data preparation
 Download and put your polyp dataset in polyp_seg/data
 
-#Backbones Preparation
+##Backbones Preparation
 It is required to download pre-trained weights for shunted_s and place it in polyp_seg/pretrained_weight
+
+
+##Training, Testing and Evaluation
+cd polyp_seg
+python -W ignore Train.py
+
+#Testing
+cd polyp_seg
+python -W ignore Test.py
+
+#Evaluation
+cd polyp_seg
+python -W ignore eval.py
