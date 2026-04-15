@@ -25,43 +25,42 @@ polyp_seg/data
 with this structure:
 ```
 polyp_seg/data/
-├── train/
+├── TrainDataset/
 │   ├── images/
 │   └── masks/
-├── test/
-│   ├── images/
-│   └── masks/
-└── eval/
-    ├── images/
-    └── masks/
+├── TestDatase/
+    ...
+
 ```
 ## Backbone Preparation
 Download pre-trained weights for shunted_s and place it in:
-
+```
 polyp_seg/pretrained_weight/
-
+```
 ## Training, Testing and Evaluation
-Training
-bash
+### Training
+```
 cd polyp_seg
 python -W ignore Train.py
+```
 After training completes, checkpoints and best model will be saved in:
-
-text
+```
 polyp_seg/snapshots/DRADNet_res/
-Testing
-bash
+```
+### Testing
+```
 cd polyp_seg
 python -W ignore Test.py
+```
 After testing completes, predicted masks will be saved in:
-
-text
+```
 polyp_seg/results/DRADNet/
-Evaluation
-bash
+```
+### Evaluation
+```
 cd polyp_seg
 python -W ignore eval.py
+```
 Evaluation results will be saved in:
-
-text
+```
 polyp_seg/eval_results/
