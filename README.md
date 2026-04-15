@@ -9,11 +9,20 @@
 ### Setup
 
 ```bash
+# Clone the repository
 git clone https://github.com/balimhoza2018-wq/DRADNet.git
 cd DRADNet
+
+# Create virtual environment
 python -m venv DRADNet
-source DRADNet/bin/activate
+source DRADNet/bin/activate  # Linux/Mac
+# or
+DRADNet\Scripts\activate  # Windows
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Install PyTorch with CUDA 11.0
 pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 -f https://download.pytorch.org/whl/torch_stable.html
 ```
 
