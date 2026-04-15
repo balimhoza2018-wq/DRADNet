@@ -18,7 +18,11 @@ pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 -f https://download.pyto
 ```
 
 ## Data Preparation
-Download and put your polyp dataset in polyp_seg/data with this structure:
+Download and put your polyp dataset in 
+```bash
+polyp_seg/data
+```
+with this structure:
 
 polyp_seg/data/
 ├── train/
